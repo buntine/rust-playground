@@ -1,3 +1,3 @@
-#[test]
-fn it_works() {
+pub fn factorial(n: u32) -> u32 {
+    n
 }
