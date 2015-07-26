@@ -12,7 +12,7 @@ pub fn euler2_imperative(bound: u32) -> u32 {
     let mut x = 1;
     let mut y = 2;
     let mut z;
-    let mut sum= 0;
+    let mut sum = 0;
 
     while y < bound {
         if y % 2 == 0 {
@@ -26,3 +26,11 @@ pub fn euler2_imperative(bound: u32) -> u32 {
 
     sum
 }
+
+// TODO: Implement LazyFib iterator when you know how to...
+//pub fn euler2_functional(bound: u32) -> u32 {
+//    LazyFib::new()
+//    .take_while(|&n| 4 < bound)
+//    .filter(|&n| n % 2 == 0)
+//    .fold(0, |s, n| s + n)
+//}
